@@ -1,0 +1,59 @@
+Run started:2026-11-21 06:26:40.609054+00:00
+
+Test results:
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: ./generate_sample_data.py:16:18
+15	    for i, name in enumerate(customers, start=1):
+16	        bottles = random.randint(1,6)
+17	        order_date = date(2026,11,1) + timedelta(days=random.randint(0,13))
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: ./generate_sample_data.py:17:54
+16	        bottles = random.randint(1,6)
+17	        order_date = date(2026,11,1) + timedelta(days=random.randint(0,13))
+18	        writer.writerow( [f"AF-{1000+i}", name, random.choice(areas), bottles, bottles* PRICE_PER_BOTTLE, random.choice(statuses),order_date] )
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: ./generate_sample_data.py:18:48
+17	        order_date = date(2026,11,1) + timedelta(days=random.randint(0,13))
+18	        writer.writerow( [f"AF-{1000+i}", name, random.choice(areas), bottles, bottles* PRICE_PER_BOTTLE, random.choice(statuses),order_date] )
+
+--------------------------------------------------
+>> Issue: [B311:blacklist] Standard pseudo-random generators are not suitable for security/cryptographic purposes.
+   Severity: Low   Confidence: High
+   CWE: CWE-330 (https://cwe.mitre.org/data/definitions/330.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random
+   Location: ./generate_sample_data.py:18:106
+17	        order_date = date(2026,11,1) + timedelta(days=random.randint(0,13))
+18	        writer.writerow( [f"AF-{1000+i}", name, random.choice(areas), bottles, bottles* PRICE_PER_BOTTLE, random.choice(statuses),order_date] )
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 39
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 4
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 4
+Files skipped (0):

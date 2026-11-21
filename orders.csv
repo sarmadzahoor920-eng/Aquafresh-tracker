@@ -1,0 +1,12 @@
+order_id,customer,area,bottles,amount_pkr,status,order_date
+AF-1001,Ahmed Khan,G-10,6,1500,delivered,2026-11-02
+AF-1002,Ali Ahmed,F-8,2,500,delivered,2026-11-04
+AF-1003, Hamza Riaz,DHA Phase 2,6,1500,delivered,2026-11-12
+AF-1004,Bilal Raza,G-10,5,1250,delivered,2026-11-07
+AF-1005,Shayan Tahir,F-8,1,250,cancelled,2026-11-04
+AF-1006,Usman ali,DHA Phase 2,5,1250,delivered,2026-11-01
+AF-1007,Moiz Ahmed,Bahria Town,6,1500,cancelled,2026-11-11
+AF-1008,Zain Abbas,E-11,4,1000,cancelled,2026-11-04
+AF-1009,Zeeshan Ali,G-10,3,750,delivered,2026-11-13
+AF-1010,Sarmad Zahoor,I-8,6,1500,delivered,2026-11-07
+AF-1011,Waleed Qasim,I-8,2,500,delivered,2026-11-04
